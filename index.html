@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="node_modules/three/build/three.js"></script>
+  
+
+  <title>Three JS Test</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/c26cd2166c.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  
+  <nav class="navbar navbar-expand-lg fixed-top  text-capitalize">
+
+    <div class="container">
+      <a class="navbar-brand font-weight-bold text-white" href="#">Me</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link active px-lg-3 rounded " href="#Home">Home </a>
+          <a class="nav-item nav-link px-lg-3 rounded" id="changeAbout" href="#About">About Me</a>
+          <a class="nav-item nav-link px-lg-3 rounded" href="#Project">Project</a>
+          <a class="nav-item nav-link px-lg-3 rounded" href="#Contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <canvas id="CanvasHomePage"></canvas>
+  <div id="Home" class="container-fluid ">
+    <section class="main py-5">
+      <div class="container py-5 ">
+        <div class="row py-5">
+          <div class="col-lg-8 py-5 mr-auto">
+            <h3 class="text-white"><small>Hello, I'm</small><br>
+              Azizi Novan
+            </h3>
+            <h6 class="pt-3 text-white">College student</h6>
+            <a href="#Project"><input type="button" value="My Project" class="bt1 mt-5 mr-3"></a>
+            <a href="#Contact"><input type="button" value="Here Me" class="bt2 mt-5 "></a>
+          </div>
+          <div class="col-lg-4 px-5 mr-auto">
+            <!-- <img
+                  src="https://media-exp1.licdn.com/dms/image/C4D03AQGkLfG1RHTGoQ/profile-displayphoto-shrink_800_800/0/1623459660489?e=1631750400&v=beta&t=GQmL6BFoM9fyjCmOhz2t0KxLtqjgBRj_mW6J3VHC1hA"
+                  alt="" srcset="" width="100%" height="300vh" class="rounded-circle "> -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- src="https://instagram.fiev22-2.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/68899050_517792992302140_7202563603100962889_n.jpg?tp=1&_nc_ht=instagram.fiev22-2.fna.fbcdn.net&_nc_cat=104&_nc_ohc=Yfl2LhxmYc0AX-c1BXp&ccb=7-4&oh=7fc3194a41df7b35d0c52b0891974633&oe=608073B8"  -->
+
+  <section id="About" class="about py-5">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-5">
+          <!-- <img
+            src="https://instagram.fiev22-2.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/68899050_517792992302140_7202563603100962889_n.jpg?tp=1&_nc_ht=instagram.fiev22-2.fna.fbcdn.net&_nc_cat=104&_nc_ohc=Yfl2LhxmYc0AX-c1BXp&ccb=7-4&oh=7fc3194a41df7b35d0c52b0891974633&oe=608073B8"
+            alt="" class="img-fluid"> -->
+          <canvas width="400px" height="350px" id="CanvasAboutPage"></canvas>
+        </div>
+        <div class="col-lg-7 pt-3">
+          <h1>About Me.</h1>
+          <p>Informatic Enginering</p>
+          <p class="py-4">I am <span class="font-weight-bold">Azizi Novan M</span> sas a student from the polytechnic at
+            Indonesian informatics engineering department 2019, residing in Banyuwangi Indonesia. I am busy
+            still as a student and taking the learning stage </p>
+          <a href="#Contact"><button type="button" class="btn1">Contact Us</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <section id="Project" class="project py-5">
+      <div class="container py-5">
+        <h1 class="text-center pb-5">My Skils</h1>
+        <div class="row pb-3">
+          <div class="col-lg-4 mb-3">
+            <div class="card text-center py-3">
+              <div class="">
+                <div class="circle ">
+                  <span><i class="fas fa-desktop"></i></span>
+                </div>
+                <h4 class="font-weight-bold pb-2 text-white">UI/UX</h4>
+                <p class="text-white">Computer graphics are a related part of computer science
+                  by digitally creating and manipulating images (visuals).
+                </p>
+                <a href="#" class=""><button class="btnew">Go somewhere</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="card text-center py-3">
+              <div class="">
+                <div class="circle ">
+                  <span><i class="fas fa-mobile-alt"></i></span>
+                </div>
+                <h4 class="text-white font-weight-bold pb-2">Aplication Mobile</h4>
+                <p class="text-white">Learn from the development of techniques related to cellular or mobile phones in
+                  terms of
+                  application development.
+                </p>
+                <a href="#" class=""><button class="btnew">Go somewhere</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class=" card text-center py-3">
+              <div class="">
+                <div class="circle ">
+                  <span><i class="fas fa-globe"></i></span>
+                </div>
+                <h4 class="text-white font-weight-bold pb-2">Web Developer</h4>
+                <p class="text-white">is a programmer who specializes in, or is specifically involved in
+                  in, the development of World Wide Web applications.
+                </p>
+                <a href="#" class=""><button class="btnew">Go somewhere</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  
+
+ 
+  <section class="portfolio">
+    
+    <div class="container py-5">
+      <h1 class="text-white text-center pb-5">My Work.</h1>
+      <div class="row text-center" id="modalNew">
+        <div class="col-lg-4 py-3">
+          <img id="myImg"
+            src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+            style="width:100%;max-width:500px" alt="Progammer" class="img-fluid">
+        </div>
+        <div class="col-lg-4 py-3">
+          <img id="myImg"
+            src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1504&q=80"
+            style="width:100%;max-width:500px" alt="Designer" class="img-fluid">
+        </div>
+        <div class="col-lg-4 py-3">
+          <img id="myImg"
+            src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80"
+            style="width:100%;max-width:500px" alt="Developer" class="img-fluid">
+        </div>
+      </div>
+      
+    </div>
+    <canvas id="CanvaslandingPage"></canvas>
+    
+    
+  </section>  
+  <div class="container py-5 mb-3 quets">
+    <div class="text-white text-center ncol-lg-4 py-3">
+      <h3>Informatic Enginering</h3>
+      
+      <p class="mt-3 pb-3 text-white">I am <span class="font-weight-bold">Learn</span> Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Est, id. Blanditiis quos doloremque quaerat minus possimus ipsam aut sint ad.
+      </p>
+    </div>
+  </div>
+
+  <section id="Ourproject">
+    <div class="container py-5">
+      <h1 class="text-white text-center pb-5">My Our Project.</h1>
+      <div class="row text-center" id="modalNew">
+        <div class="col-lg-4 py-3">
+          <h3 class="text-white">Mobile Flutix</h3>
+          <img id="myImg"
+            src="img/mobile_flutix.png"
+            style="width:100%;max-width:500px" alt="Progammer" class="img-fluid">
+        </div>
+        <div class="col-lg-4 py-3">
+          <h3 class="text-white">Web Restaurant</h3>
+          <img id="myImg"
+            src="img/web_restaurant1.JPG"
+            style="width:100%;max-width:500px" alt="Designer" class="img-fluid">
+        </div>
+        <div class="col-lg-4 py-3">
+          <h3 class="text-white">Mobile Restaurant</h3>
+          <img id="myImg"
+            src="img/mobile_restaurant.png"
+            style="width:100%;max-width:500px" alt="Developer" class="img-fluid">
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  
+  <section id="Contact" class="contact py-5">
+    <div class="container py-5">
+      <h1 class="text-center text-white ">Contact Us.</h1>
+      <div class="row py-5">
+        <div class="col-lg-10 mx-auto">
+          <div class="row text-center">
+            <div class="col-lg-4">
+              <div class="circle"><span><i class="fas fa-map-marked-alt"></i></span></div>
+              <h5 class="text-white">Address</h5>
+              <p class="text-white">Banyuwangi, Indonesia</p>
+            </div>
+            <div class="col-lg-4">
+              <div class="circle"><span><i class="fas fa-envelope"></i></span></div>
+              <h5 class="text-white">Email</h5>
+              <p class="text-white">xxxx@gamil.com</p>
+            </div>
+            <div class="col-lg-4">
+              <div class="circle"><span><i class="fas fa-phone"></i></span></div>
+              <h5 class="text-white">Phone</h5>
+              <p class="text-white">+6282xxxxxxxx</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-9 mx-auto">
+          <form action="">
+            <div class="form-row">
+              <div class="col-lg-6">
+                <input type="text" class="form-control bg-light mb-3" placeholder="Name">
+              </div>
+              <div class="col-lg-6">
+                <input type="text" class="form-control bg-light mb-3" placeholder="Name">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-lg-12">
+
+                <textarea name="" id="" class="form-control bg-light" placeholder="Message" cols="30"
+                  rows="10"></textarea>
+              </div>
+            </div>
+            <a href="#" class="text-white"><button class="btnew my-4" >Submit</button></a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="py-3 text-center">
+    <p>2021 Peronal Web</p>
+  </footer>
+
+
+  <script src="js/app.js" ></script>
+  <script src="js/landing.js"  defer></script>
+  <script src="js/about.js" ></script>
+  <script src="js/home.js" ></script>
+
+  <!-- Js Personal web -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
