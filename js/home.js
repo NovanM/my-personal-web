@@ -20,6 +20,7 @@ particelGeo.setAttribute('position', new THREE.BufferAttribute(posArray, 3))
 const materialHome = new THREE.PointsMaterial(
     {
         size:0.005,
+        
     }
 )
 
@@ -49,14 +50,13 @@ sceneHome.add(pointLightHome)
  * Sizes
  */
  const sizesHome = {
-    width: window.innerWidth  * .9,
+    width: window.innerWidth  * .85,
     height: window.innerHeight
 }
-
 window.addEventListener('resize', () =>
 {
     // Update sizes 
-    sizesHome.width = window.innerWidth  * .9    
+    sizesHome.width = window.innerWidth  * .98    
     sizesHome.height = window.innerHeight
 
     // Update camera

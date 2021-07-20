@@ -10,13 +10,26 @@ const loader = new THREE.TextureLoader()
 window.onscroll = () => myNav();
 
 var navbar = document.querySelector(".navbar");
+var navlink = document.querySelectorAll(".nav-link");
+var navbrand = document.querySelector(".navbar-brand")
 var stickyPos = navbar.offsetTop;
 
 function myNav() {
   if (window.pageYOffset > stickyPos) {
-    navbar.classList.add("sticky")
+    navbar.classList.add("sticky");
+    navbrand.classList.add("text-dark")
+    for (let i = 0; i < navlink.length; i++) {
+      navlink[i].classList.add("text-dark");
+    }
+
   } else {
     navbar.classList.remove("sticky");
+    navbrand.classList.remove("text-dark")
+    for (let i = 0; i < navlink.length; i++) {
+      if (navlink[i].classList.contains("text-dark")) {
+        navlink[i].classList.remove("text-dark");
+      }
+    }
   }
 }
 

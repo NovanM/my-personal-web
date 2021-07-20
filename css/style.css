@@ -47,13 +47,16 @@ html {
   }
 
   .sticky {
+    transition: 300ms;
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 6px 4px 41px -24px rgba(255, 255, 255, 0.75);
-    -webkit-box-shadow: 6px 4px 41px -24px rgba(255, 255, 255, 0.75);
-    -moz-box-shadow: 6px 4px 41px -24px rgba(255, 255, 255, 0.75);
+    box-shadow: 6px 4px 41px -24px rgba(255, 255, 255,0.5);
+    -webkit-box-shadow: 6px 4px 41px -24px rgba(255, 255, 255,0.5);
+    -moz-box-shadow: 6px 4px 41px -24px rgba(255, 255, 255,0.5);
+    background-color:rgb(255, 255, 255);
   }
+  
   
   .nav-link {
     color: white;
@@ -62,10 +65,10 @@ html {
     cursor: pointer;
     text-decoration: none;
   }
-  
+
   .nav-link:hover {
     color: white;
-    background-color: black;
+   
   }
   .navbar-brand {
     font-size: 1.25rem;
@@ -303,6 +306,10 @@ html {
     }
     #caption {
       bottom: 40px;
+    }
+
+    #CanvasAboutPage{
+      position: relative;
     }
   }
   
