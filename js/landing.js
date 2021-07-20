@@ -1,13 +1,11 @@
 
 const canvas = document.getElementById("CanvaslandingPage")
 
-
 // Scene
 const scene = new THREE.Scene()
 
 // Objects
 const geometry = new THREE.PlaneBufferGeometry( 3, 3, 64, 64 )
-
 
 // Materials
 
