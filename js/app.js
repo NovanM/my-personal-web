@@ -1,4 +1,4 @@
-
+// import * as THREE from '../three/src/Three.js';
 
 // Three js 
 const clock = new THREE.Clock()
