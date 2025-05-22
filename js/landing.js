@@ -1,8 +1,7 @@
+
 const canvas = document.getElementById("CanvaslandingPage")
 
-// Loader and Clock
-
-
+    
 // Scene
 const scene = new THREE.Scene()
 
