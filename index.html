@@ -164,8 +164,8 @@
   </section>  
   <div class="container py-5 mb-3 quets">
     <div class="text-white text-center ncol-lg-4 py-3">
-      <h3>Informatic Enginering</h3>
-      <p class="mt-3 pb-3 text-white">"When you study programming  you'll find a wall that will make you want to retreat,<br> but when you choose to fight the wall you're growing, that's learning programming "
+      <h3>nformatics Engineering</h3>
+      <p class="mt-3 pb-3 text-white">""Learning programming means facing walls that challenge you. When you push through them, you grow."""
       </p>
     </div>
   </div>
@@ -275,11 +275,18 @@
   </footer>
 
   <!-- <script src="three/src/Three.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+ <script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@<version>/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@<version>/examples/jsm/"
+  }
+}
+</script>
   <script src="js/app.js" ></script>
-  <script src="js/landing.js"  defer></script>
   <script src="js/about.js" ></script>
   <script src="js/home.js" ></script>
+  <script src="js/landing.js"  defer></script>
 
   <!-- Js Personal web -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

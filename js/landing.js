@@ -1,22 +1,23 @@
-
 const canvas = document.getElementById("CanvaslandingPage")
+
+// Loader and Clock
+
 
 // Scene
 const scene = new THREE.Scene()
 
 // Objects
-const geometry = new THREE.PlaneBufferGeometry( 3, 3, 64, 64 )
-
+const geometry = new THREE.PlaneGeometry( 3, 3, 64, 64 )
 // Materials
 
-const texture = loader.load("./img/imgTexture.jpg")
+const texture = loader.load("../img/imgTexture.jpg")
 // const texture = loader.load('https://images.unsplash.com/photo-1467693068421-3a2b8d01faf0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80F')
-const height = loader.load('./img/height.png')
+const height = loader.load('../img/height.png')
 // const height = loader.load('https://upload.wikimedia.org/wikipedia/commons/0/01/Blender3DNobbToPro-ExampleHeightmap.jpg')
-const alpha = loader.load('./img/alpha.jpg')
+const alpha = loader.load('../img/alpha.jpg')
 // const alpha = loader.load('https://aws1.discourse-cdn.com/standard17/uploads/threejs/original/2X/7/72c58e4b7fdb116af74090ad829569979edca6f6.png')
 const material = new THREE.MeshStandardMaterial({
-    color: 'grey',
+    color: 0xffffff,
     map: texture,
     displacementMap: height,
     displacementScale:.6,
@@ -25,10 +26,10 @@ const material = new THREE.MeshStandardMaterial({
     depthTest:false
         
   });
-material.color = new THREE.Color(0xfffff)
-
-// Mesh
 const plane = new THREE.Mesh(geometry,material)
+material.color = new THREE.Color(0xffffff)
+plane.rotation.x = Math.PI / 2
+// Mesh
 scene.add(plane)
 plane.rotation.x = 181
 // Lights
